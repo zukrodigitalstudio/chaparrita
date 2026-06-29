@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chaparrita — Cocina Bien Chingona</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -201,7 +202,7 @@
     <div class="destacados-grid">
       <div class="dcard">
         <img src="assets/taco_birria.webp" alt="Taco Birria" style="height:110px; width:100%; object-fit:cover; border-bottom:2px solid var(--tinta);">
-        <div class="db"><h4>Taco Birria</h4><div class="dprice">$9.900</div></div>
+        <div class="db"><h4>Taco Birria</h4><div class="dprice">$11.000</div></div>
       </div>
       <div class="dcard">
         <img src="assets/picada_mexicana.webp" alt="Picada Mexicana" style="height:110px; width:100%; object-fit:cover; border-bottom:2px solid var(--tinta);">
@@ -212,19 +213,19 @@
         <div class="db"><h4>Burriburguer Clásica</h4><div class="dprice">$15.000</div></div>
       </div>
       <div class="dcard">
-        <div class="ph2" data-photo-key="chapaburger">Chapaburger</div>
-        <div class="db"><h4>Chapaburger (Hamburguesa Chaparrita)</h4><div class="dprice">$13.500</div></div>
+        <img src="assets/chapaburguer.webp" alt="Chapaburger" style="height:110px; width:100%; object-fit:cover; border-bottom:2px solid var(--tinta);">
+        <div class="db"><h4>Chapaburger (Hamburguesa Chaparrita)</h4><div class="dprice">$15.000</div></div>
       </div>
       <div class="dcard">
         <img src="assets/papas_poblanas.webp" alt="Papas Poblanas" style="height:110px; width:100%; object-fit:cover; border-bottom:2px solid var(--tinta);">
-        <div class="db"><h4>Papas Poblanas</h4><div class="dprice">$9.000</div></div>
+        <div class="db"><h4>Papas Poblanas</h4><div class="dprice">$10.000</div></div>
       </div>
       <div class="dcard">
-        <div class="ph2" data-photo-key="gringa-birria">Gringa Birria</div>
-        <div class="db"><h4>Gringa Birria</h4><div class="dprice">$9.000</div></div>
+        <img src="assets/gringa_birria.webp" alt="Gringa Birria" style="height:110px; width:100%; object-fit:cover; border-bottom:2px solid var(--tinta);">
+        <div class="db"><h4>Gringa Birria</h4><div class="dprice">$10.000</div></div>
       </div>
       <div class="dcard">
-        <div class="ph2" data-photo-key="pizza-fugazeta">Pizza Fugazeta</div>
+        <img src="assets/pizza_fugazeta.webp" alt="Pizza Fugazeta" style="height:110px; width:100%; object-fit:cover; border-bottom:2px solid var(--tinta);">
         <div class="db"><h4>Pizza Fugazeta</h4><div class="dprice">$18.000</div></div>
       </div>
       <div class="dcard">
@@ -235,162 +236,9 @@
 
 
     <div class="toggle-wrap">
-      <button class="btn btn-dark" onclick="
-        const m=document.getElementById('full-menu');
-        const open = m.style.display==='block';
-        m.style.display = open ? 'none' : 'block';
-        this.textContent = open ? 'Ver carta completa, wey' : 'Ver menos';
-        if(!open){ m.scrollIntoView({behavior:'smooth', block:'start'}); }
-      ">Ver carta completa, wey</button>
+      <a href="https://menu.fu.do/chaparrita?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGndyEYcAFqf_OnPx71jKmI69v9-wlaWl6PyMo3z6yv7747CkX-YIZsLFet2D0_aem_YWdncwls-QQLQdEYLlwM2gZMfqfJ&brid=YWdncwHdu_Z8oOhTLPNjYDryCaD2" target="_blank" class="btn btn-dark">Ver carta completa, wey</a>
     </div>
 
-    <div id="full-menu">
-
-      <div class="menu-cat">
-        <h3>Especiales de Invierno</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">El Guiso de la Casa (Lentejas)</div><div class="item-desc">Nuestro clásico argentino. Lentejas a fuego lento.</div></div><span class="item-price">$16.000</span></div>
-          <div class="item"><div><div class="item-name">Cazuela de Pancita (Mondongo)</div><div class="item-desc">Guiso de mondongo en caldo rojo, sabor CDMX.</div></div><span class="item-price">$16.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Merienda</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Combo Miga Clásico + Gaseosa Personal</div><div class="item-desc">Media plancha de sandwich de miga + gaseosa lata.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Combo Miga Clásico + Jugo a Elección</div><div class="item-desc">Media plancha de miga clásico + vaso de jugo.</div></div><span class="item-price">$10.000</span></div>
-          <div class="item"><div><div class="item-name">Combo Tostado de Miga + Gaseosa Lata</div><div class="item-desc">Media plancha de tostado de miga clásico.</div></div><span class="item-price">$10.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Fritos</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Nachos</div><div class="item-desc">Con guacamole, pico de gallo o cheddar (1 a elección sin cargo).</div></div><span class="item-price">$6.000</span></div>
-          <div class="item"><div><div class="item-name">Papas Fritas Clásicas</div><div class="item-desc">Clásicas o con cheddar.</div></div><span class="item-price">$7.000</span></div>
-          <div class="item"><div><div class="item-name">Papas Poblanas</div><div class="item-desc">Con salteado de cebolla, morrón y huevo frito.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Quesillo</div><div class="item-desc">Bastones de muzzarella rebozados fritos, vinagreta de arándanos.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Yuca Frita</div><div class="item-desc">Mandioca frita con salsa de pimientos.</div></div><span class="item-price">$7.200</span></div>
-          <div class="item"><div><div class="item-name">Papas Chingonas</div><div class="item-desc">Con panceta dorada picada, cheddar y cebollita de verdeo.</div></div><span class="item-price">$9.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Tacos</h3>
-        <p class="price-note" style="margin-bottom:10px;">Porción de 3 tortillas de maíz o trigo.</p>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Taco Birria</div><div class="item-desc">Estofado de tapa de asado de ternera.</div></div><span class="item-price">$9.900</span></div>
-          <div class="item"><div><div class="item-name">Taco Cerdo BBQ</div><div class="item-desc">Pernil de cerdo asado, salsa BBQ.</div></div><span class="item-price">$9.900</span></div>
-          <div class="item"><div><div class="item-name">Taco de Pollo</div><div class="item-desc">Cubos de suprema de pollo dorados a la plancha.</div></div><span class="item-price">$9.900</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Gringas</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Gringa Birria</div><div class="item-desc">Estofado de tapa de asado de ternera con chiles y queso dorado a la plancha.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Gringa Cerdo</div><div class="item-desc">Pernil de cerdo asado, salsa BBQ y queso dorado a la plancha.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Gringa Pollo</div><div class="item-desc">Suprema de pollo en cubos dorados a la plancha y queso.</div></div><span class="item-price">$9.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Quesadillas</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Especial Chica</div><div class="item-desc">Tortilla de trigo, queso dorado a la plancha y suprema de pollo.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Especial Grande</div><div class="item-desc">Versión grande de la especial.</div></div><span class="item-price">$16.200</span></div>
-          <div class="item"><div><div class="item-name">Pollo Catupiry Tomate Chica</div><div class="item-desc">Tortilla de trigo, queso, suprema de pollo y tomate.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Pollo Catupiry Tomate Grande</div><div class="item-desc">Versión grande.</div></div><span class="item-price">$16.200</span></div>
-          <div class="item"><div><div class="item-name">Queso y Cebolla Chica</div><div class="item-desc">Queso dorado a la plancha y cebolla dorada.</div></div><span class="item-price">$8.100</span></div>
-          <div class="item"><div><div class="item-name">Queso y Cebolla Grande</div><div class="item-desc">Versión grande.</div></div><span class="item-price">$14.400</span></div>
-          <div class="item"><div><div class="item-name">Queso y Jamón Chica</div><div class="item-desc">Queso dorado a la plancha y jamón cocido.</div></div><span class="item-price">$8.100</span></div>
-          <div class="item"><div><div class="item-name">Queso y Jamón Grande</div><div class="item-desc">Versión grande.</div></div><span class="item-price">$14.400</span></div>
-          <div class="item"><div><div class="item-name">Pollo Chica</div><div class="item-desc">Queso dorado a la plancha y suprema de pollo.</div></div><span class="item-price">$9.000</span></div>
-          <div class="item"><div><div class="item-name">Queso y Tomate Chica</div><div class="item-desc">Queso dorado a la plancha y tomate.</div></div><span class="item-price">$8.100</span></div>
-          <div class="item"><div><div class="item-name">Queso y Tomate Grande</div><div class="item-desc">Versión grande.</div></div><span class="item-price">$14.400</span></div>
-          <div class="item"><div><div class="item-name">Pollo Grande</div><div class="item-desc">2 tortillas de trigo, muzzarella rallada dorada y pollo en cubos.</div></div><span class="item-price">$16.200</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Picada</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Picada Mexicana</div><div class="item-desc">Ideal para compartir de a dos: 2 tacos de birria, gringa, nachos y más.</div></div><span class="item-price">$25.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Burritos</h3>
-        <p class="price-note" style="margin-bottom:10px;">Porción 1 tortilla de trigo, roll con papas.</p>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Burrito Birria</div><div class="item-desc">Estofado de tapa de asado de ternera.</div></div><span class="item-price">$13.500</span></div>
-          <div class="item"><div><div class="item-name">Burrito Cerdo BBQ</div><div class="item-desc">Pernil de cerdo asado.</div></div><span class="item-price">$13.500</span></div>
-          <div class="item"><div><div class="item-name">Burrito Pollo</div><div class="item-desc">Suprema de pollo.</div></div><span class="item-price">$13.500</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Hamburguesas</h3>
-        <p class="price-note" style="margin-bottom:10px;">Pan de la casa, medallón 100% carne vacuna, queso barra o cheddar.</p>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Cheeseburguer</div><div class="item-desc">Clásica con queso.</div></div><span class="item-price">$8.100</span></div>
-          <div class="item"><div><div class="item-name">Hamburguesa Completa</div><div class="item-desc">Con huevo, tomate y lechuga.</div></div><span class="item-price">$11.700</span></div>
-          <div class="item"><div><div class="item-name">Hamburguesa Especial</div><div class="item-desc">Con jamón.</div></div><span class="item-price">$9.900</span></div>
-          <div class="item"><div><div class="item-name">Hamburguesa Mexicana</div><div class="item-desc">Con guacamole y nachos.</div></div><span class="item-price">$11.700</span></div>
-          <div class="item"><div><div class="item-name">Hamburguesa Poblana</div><div class="item-desc">Doble carne, queso, lechuga y tomate.</div></div><span class="item-price">$13.500</span></div>
-          <div class="item"><div><div class="item-name">Chapaburger</div><div class="item-desc">Medallón ahumado, cebollas caramelizadas, bacon y huevo frito.</div></div><span class="item-price">$13.500</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Burriburguer</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Burriburguer Clásica</div><div class="item-desc">El emblema de la casa: carne 100% vacuna, queso dorado a la plancha y huevo frito.</div></div><span class="item-price">$15.000</span></div>
-          <div class="item"><div><div class="item-name">Burriburguer Mexicani</div><div class="item-desc">¡Explosión azteca! Carne vacuna, queso fundido, cebollita y guacamole.</div></div><span class="item-price">$15.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Lomos</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Lomito Gallina Distraída</div><div class="item-desc">Bife de suprema de pollo a la plancha, salsa de soja, lechuga.</div></div><span class="item-price">$17.000</span></div>
-          <div class="item"><div><div class="item-name">Torta de Carne</div><div class="item-desc">Tapa de asado de ternera desmechada, lechuga, tomate, queso.</div></div><span class="item-price">$17.000</span></div>
-          <div class="item"><div><div class="item-name">Torta de Cerdo</div><div class="item-desc">Pernil de cerdo desmechado, lechuga, tomate, queso.</div></div><span class="item-price">$17.000</span></div>
-          <div class="item"><div><div class="item-name">Lomito de Carne</div><div class="item-desc">Pan de la casa, bife de lomito, lechuga, tomate, queso dorado.</div></div><span class="item-price">$17.000</span></div>
-          <div class="item"><div><div class="item-name">Lomito Chamaco (Carne o Pollo)</div><div class="item-desc">Clásico lomito en pan brioche, completo con jamón.</div></div><span class="item-price">$14.000</span></div>
-          <div class="item"><div><div class="item-name">Lomito Chaparrita</div><div class="item-desc">Bife de lomito a la plancha salteado con salsa de soja, lechuga, tomate, queso.</div></div><span class="item-price">$19.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Pizzas</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Calabreza</div><div class="item-desc">Salsa, queso, muzza, calabreza.</div></div><span class="item-price">$18.000</span></div>
-          <div class="item"><div><div class="item-name">Fugazeta</div><div class="item-desc">Prepizza propia con abundante queso fundido y cebolla.</div></div><span class="item-price">$18.000</span></div>
-          <div class="item"><div><div class="item-name">Jamón y Morrón</div><div class="item-desc">Salsa, queso, jamón y morrón.</div></div><span class="item-price">$18.000</span></div>
-          <div class="item"><div><div class="item-name">Muzzarella</div><div class="item-desc">Salsa, queso, orégano, pesto, aceituna.</div></div><span class="item-price">$15.000</span></div>
-          <div class="item"><div><div class="item-name">Napolitana</div><div class="item-desc">Salsa, queso, orégano y ajo.</div></div><span class="item-price">$18.000</span></div>
-          <div class="item"><div><div class="item-name">Rúcula y Jamón Crudo</div><div class="item-desc">Salsa, queso, rúcula, jamón crudo, oliva.</div></div><span class="item-price">$18.000</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Bebidas sin alcohol</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">7UP 1.5L</div><div class="item-desc">Gaseosa línea.</div></div><span class="item-price">$8.000</span></div>
-          <div class="item"><div><div class="item-name">Agua Personal sin gas</div><div class="item-desc">Agua embotellada personal.</div></div><span class="item-price">$3.500</span></div>
-        </div>
-      </div>
-
-      <div class="menu-cat">
-        <h3>Cervezas</h3>
-        <div class="menu-list">
-          <div class="item"><div><div class="item-name">Stella Artois Botella 330ml</div><div class="item-desc">Personal.</div></div><span class="item-price">$5.000</span></div>
-          <div class="item"><div><div class="item-name">Andes Lata 473ml</div><div class="item-desc">Personal.</div></div><span class="item-price">$6.000</span></div>
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
